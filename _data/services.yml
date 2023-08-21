@@ -1,0 +1,9 @@
+- title: Teaching Assistant
+  type: time_table
+  contents:
+    - title: Software Atelier 1 - Fundamentals of Informatics
+      institution: Università della Svizzera italiana
+      course: Bachelor in Informatics
+      ects: 6
+      year: Fall 2023
+    

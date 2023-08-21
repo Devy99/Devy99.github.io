@@ -7,9 +7,9 @@
               <table class="table-cv">
                 <tbody>
                   <tr>
-                    <td>
-                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">{{ content.year }}</span>
-                    </td>
+                    <th>
+                      <span class="badge font-weight-bold text-uppercase align-middle date-badge">{{ content.year }}</span>
+                    </th>
                   </tr>
                   {% if content.location %}
                   <tr>
@@ -27,23 +27,41 @@
             {% if content.title %}
             <h6 class="title font-weight-bold ml-1 ml-md-4">{{content.title}}</h6>
             {% endif %}
-            {% if content.department or content.institution %}
+            {% if content.department or content.institution or content.course %}
+            <div class="responsive-table">
             <table class="table-cv ml-1 ml-md-4 institution">
             <tbody>
-              {% if content.institution %}
               <tr>
-                <td style="vertical-align: top; text-align: center;" class="institution"><i class="fas fa-university iconinstitution"></i></td>
-                <td class="institution">{{content.institution}}</td>
-              </tr>
+              {% if content.institution %}
+              <th>
+                <td style="vertical-align: top; text-align: center;" class="department-icon"><i class="fas fa-university iconinstitution"></i></td>
+                <td class="department">{{content.institution}}</td>
+              </th>
               {% endif %}
               {% if content.department %}
-              <tr>
-                <td style="vertical-align: top; text-align: center;" class="department"><i class="far fa-dot-circle icondepartment"></i></td>
+              <th>
+                <td style="vertical-align: top; text-align: center;" class="department-icon"><i class="far fa-dot-circle icondepartment"></i></td>
                 <td class="department">{{content.department}}</td>
-              </tr>
+              </th>
               {% endif %}
+
+              {% if content.course %}
+              <th>
+                <td style="vertical-align: top; text-align: center;" class="department-icon"><i class="fa-solid fa-chalkboard-user icondepartment"></i></td>
+                <td class="department">{{content.course}}</td>
+              </th>
+                {% if content.ects %}
+               <th>
+                  <td style="vertical-align: top; text-align: center;" class="department-icon"><i class="fa-regular fa-clock icondepartment"></i></td>
+                  <td class="department">{{content.ects}} ECTS</td>
+                </th>
+                {% endif %}
+              {% endif %}
+
+            </tr>
             </tbody>
             </table>
+            </div>
             {% endif %}
             {% if content.maindescription %}
               <div class="ml-1 ml-md-4 ">{{ content.maindescription }}</div>
