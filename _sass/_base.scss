@@ -1087,3 +1087,42 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+
+// Publications
+
+.bibliography-year {
+  color: #ddd;
+  text-align: right;
+}
+
+.bibliography {
+  li {
+      .title {
+          font-weight: bolder;
+      }
+
+      .author {
+          a {
+              color: var(--global-text-color);
+              border-bottom: 1px dashed;
+
+              &:hover {
+                  border-bottom-style: solid;
+                  text-decoration: none;
+              }
+          }
+
+          nobr > em {
+              font-weight: bold;
+              font-style: normal;
+              color: var(--global-theme-color);
+          }
+      }
+
+      .badge {
+        background: var(--global-theme-color);
+      }
+  }
+}
+

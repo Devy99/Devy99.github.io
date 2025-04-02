@@ -1,2 +1,24 @@
 ---
 ---
+
+@article{Giagnorio:personalizing2025,
+title={Why Personalizing Deep Learning-Based Code Completion Tools Matters},
+author={Giagnorio, Alessandro and Martin-Lopez, Alberto and Bavota, Gabriele},
+abbr={TOSEM},
+journal={ACM Transactions on Software Engineering and Methodology},
+publisher={ACM New York, NY},
+year={2025},
+abstract={Deep learning (DL)-based code completion tools have transformed software development by enabling advanced code generation. These tools leverage models trained on vast amounts of code from numerous repositories, capturing general coding patterns. However, the impact of fine-tuning these models for specific organizations or developers to boost their performance on such subjects remains unexplored. In this work, we fill this gap by presenting solid empirical evidence answering this question. More specifically, we consider 136 developers from two organizations (Apache and Spring), two model architectures (T5 and Code Llama), and three model sizes (60M, 750M, and 7B trainable parameters). T5 models (60M, 750M) were pre-trained and fine-tuned on over 2,000 open-source projects, excluding the subject organizations' data, and compared against versions fine-tuned on organization- and developer-specific datasets. For the Code Llama model (7B), we compared the performance of the already pre-trained model publicly available online with the same model fine-tuned via parameter-efficient fine-tuning on organization- and developer-specific datasets. Our results show that there is a boost in prediction capabilities provided by both an organization-specific and a developer-specific additional fine-tuning, with the former being particularly performant. Such a finding generalizes across (i) the two subject organizations (i.e., Apache and Spring) and (ii) models of completely different magnitude (from 60M to 7B trainable parameters). Finally, we show that DL models fine-tuned on an organization-specific dataset achieve the same completion performance of pre-trained code models used out of the box and being ∼10× larger, with consequent savings in terms of deployment and inference cost (e.g., smaller GPUs needed).},
+pdf={https://arxiv.org/abs/2503.14201}
+}
+
+
+@inproceedings{Giagnorio:lowresource2025,
+  title={Enhancing Code Generation for Low-Resource Languages: No Silver Bullet},
+  author={Giagnorio, Alessandro and Martin-Lopez, Alberto and Bavota, Gabriele},
+  abbr={ICPC},
+  booktitle={Proceedings of the 33nd IEEE/ACM International Conference on Program Comprehension},
+  year={2025},
+  abstract={The advent of Large Language Models (LLMs) has significantly advanced the field of automated code generation. LLMs rely on large and diverse datasets to learn syntax, semantics, and usage patterns of programming languages. For low-resource languages (i.e., niche programming languages characterized by the scarcity of training data), the limited availability of such data hampers the models' ability to generalize effectively, resulting in poorer code generation performance as compared to high-resource languages. For this reason, there is a quest for techniques able to close this performance gap. We present an empirical study investigating the effectiveness of several approaches for boosting LLMs' performance on low-resource languages, namely: (i) a classic fine-tuning, which is however capped in size by the scarcity of training data; (ii) three variants of in-context learning, with prompts crafted to provide the LLM with additional information about the low-resource language (e.g., few-shot examples showcasing features of the targeted language); and (iii) a pre-training objective teaching the model how to translate between high- and low-resource languages. The context of our study are two low-resource languages (R and Racket) and six LLMs having different architectures and sizes. Our findings reveal that a fine-tuning is usually the best choice for smaller LLMs, possibly due to the fact that even a small dataset is sufficient to train their limited number of parameters. With the increase in size of the models, in-context learning becomes more and more effective, representing a safe and cheap bet (i.e., it always helps, but with different magnitudes). Differently, very large LLMs may deteriorate their performance on low-resource languages when fine-tuning is performed, possibly due to the lack of enough data needed to effectively update their weights.},
+  pdf={https://arxiv.org/abs/2501.19085}
+}

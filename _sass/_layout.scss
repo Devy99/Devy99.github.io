@@ -40,7 +40,39 @@ body.sticky-bottom-footer {
  * Publications
  ******************************************************************************/
 
-// TODO: redefine publications layout.
+ .bibliography {
+  padding: 0em;
+
+  .abbr span {
+    width: 65px;
+  }
+
+  li {
+    list-style: none;
+
+    .title {
+      font-size: 16px;
+    }
+
+    .author {
+      font-size: 12px;
+    }
+
+    .periodical {
+      font-size: 12px;
+      line-height: 1.2em;
+      margin-bottom: 5px;
+    }
+
+    .abstract {
+      font-size: 12px;
+    }
+
+    .badge {
+      font-size: 10px;
+    }
+  }
+}
 
 
 /*****************************************************************************
@@ -48,3 +80,4 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+

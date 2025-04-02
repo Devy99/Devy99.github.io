@@ -1,6 +1,8 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+ICPC:
+  url: https://conf.researchr.org/series/icpc
 
-"PhysRev":
-  url: https://journals.aps.org/
+TOSEM:
+  url: https://dl.acm.org/journal/tosem
+
+arXiv:
+  url: https://arxiv.org
