@@ -1,9 +1,28 @@
 - title: Teaching Assistant
   type: time_table
   contents:
+    - title: Software Analytics
+      institution: Università della Svizzera italiana
+      course: Master course in MSDE
+      link: https://search.usi.ch/courses/35270716/software-analytics?_gl=1*1id0o86*_gcl_au*MTU4ODQyOTE1NS4xNzQzNTAwNTUy*_ga*MjA4NDk2NDEzNy4xNzM3NDAxMTMy*_ga_89Y0EEKVWP*MTc0NTA1NjUwOC4zNC4xLjE3NDUwNTY2NjUuNDcuMC44NjAwNTU4Mjg.
+      ects: 6
+      year: Fall 2024
     - title: Software Atelier 1 - Fundamentals of Informatics
       institution: Università della Svizzera italiana
       course: Bachelor in Informatics
+      link: https://search.usi.ch/it/corsi/35270747/software-atelier-1-fundamentals-of-informatics
+      ects: 6
+      year: Fall 2024
+    - title: Software Atelier 4 - Software Engineering Project
+      institution: Università della Svizzera italiana
+      course: Bachelor in Informatics
+      link: https://search.usi.ch/it/corsi/35268192/software-atelier-4-software-engineering-project
+      ects: 9
+      year: Spring 2024
+    - title: Software Atelier 1 - Fundamentals of Informatics
+      institution: Università della Svizzera italiana
+      course: Bachelor in Informatics
+      link: https://search.usi.ch/it/corsi/35270747/software-atelier-1-fundamentals-of-informatics
       ects: 6
       year: Fall 2023
     
